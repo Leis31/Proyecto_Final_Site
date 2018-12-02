@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>SpecialTicket</title>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
@@ -27,10 +27,9 @@ body {font-family: "Lato", sans-serif}
        <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button" title="More">Categorías<i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Conciertos</a>
-        <a href="#" class="w3-bar-item w3-button">Teatro</a>
-        <a href="#" class="w3-bar-item w3-button">Deportes</a>
-        <a href="#" class="w3-bar-item w3-button">Culturales</a>
+        <a href="wfrm_Cat_Conciertos.aspx" class="w3-bar-item w3-button">Conciertos</a>
+        <a href="wfrm_Cat_Teatro.aspx" class="w3-bar-item w3-button">Teatro</a>
+        <a href="wfrm_Cat_Deportes.aspx" class="w3-bar-item w3-button">Deportes</a>
       </div>
        </div>
     <div class="w3-dropdown-hover w3-hide-small">
@@ -44,7 +43,7 @@ body {font-family: "Lato", sans-serif}
     </div>
       <div class="w3-right">
           <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Iniciar Sesión</a>
-          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registrarse</a>   
+          <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registrarse</a>   
       </div>    
   </div>
 </div>
@@ -162,6 +161,12 @@ body {font-family: "Lato", sans-serif}
             <div class="w3-complete">
               <input class="w3-input w3-border-dark-grey" type="text" placeholder="Nombre" required name="Nombre"/>
             </div>
+              <div class="w3-complete">
+              <input class="w3-input w3-border-dark-grey" type="text" placeholder="Primer Apellido" required name="Primer Apellido"/>
+            </div>
+              <div class="w3-complete">
+              <input class="w3-input w3-border-dark-grey" type="text" placeholder="Segundo Apellido" required name="Segundo Apellido"/>
+            </div>
             <div class="w3-complete">
               <input class="w3-input w3-border-dark-grey" type="text" placeholder="Correo" required name="Correo"/>
             </div>
@@ -183,9 +188,6 @@ body {font-family: "Lato", sans-serif}
   
 <!-- Final  -->
 
-
-<!-- Patrocinadores -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-footer w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
