@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -81,6 +82,7 @@
     <Content Include="WebForms\wfrm_Cat_Deportes.aspx" />
     <Content Include="WebForms\wfrm_Cat_Teatro.aspx" />
     <Content Include="WebForms\wfrm_Principal.aspx" />
+    <Content Include="WebForms\wfrm_Terminos_Condiciones.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,6 +127,13 @@
     </Compile>
     <Compile Include="WebForms\wfrm_Principal.aspx.designer.cs">
       <DependentUpon>wfrm_Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfrm_Terminos_Condiciones.aspx.cs">
+      <DependentUpon>wfrm_Terminos_Condiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfrm_Terminos_Condiciones.aspx.designer.cs">
+      <DependentUpon>wfrm_Terminos_Condiciones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
