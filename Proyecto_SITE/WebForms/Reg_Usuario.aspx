@@ -91,7 +91,7 @@
        Correo
      </span></td>
 	<td>
-	  <input type="text" size="30" class="textbox" name="CORREO" value=""/>
+	  <input type="text" size="30" class="textbox" name="CORREO" value="" id="txt_Correo" runat="server" />
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -121,17 +121,17 @@
        Nombre
      </span></td>
 	<td>
-	  <input type="text" size="30" class="textbox" name="NOMBRE" value=""/>
+	  <input type="text" size="30" class="textbox" name="NOMBRE" value="" id="txt_Nombre" runat="server"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
-<tr>
+<tr id="">
 	<td>
 	  <span class="field_value">
        Teléfono
      </span></td>
 	<td>
-	  <input type="text" size="15" class="textbox" name="TELEFONO" value=""/>
+	  <input type="text" size="15" class="textbox" name="TELEFONO"  value="" id="txt_Telefono" runat="server"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -159,7 +159,9 @@
 </tr>
 <tr>
      <td><input type="button" value="Insertar" style="margin-top:13px;" class="button" onclick="Validar(this.form)"/>&nbsp;</td>
-     <td><input type="button" value="Cancelar" class="button" onclick="cancelar()"/>&nbsp;</td>
+     <td><input type="button" value="Cancelar" class="button" onclick="cancelar()"/> <br />
+         <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+     </td>
 </tr>
 </tbody></table>
 </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
